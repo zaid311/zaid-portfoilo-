@@ -53,14 +53,14 @@
   }
 
   /* EDITOR CHROME */
+  html, body{ height:100%; }
   .editor{
-    max-width: 860px;
-    margin: 40px auto;
-    border: 1px solid var(--line);
-    border-radius: 10px;
+    min-height: 100vh;
+    margin: 0;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
     background: var(--bg-panel);
-    box-shadow: 0 40px 100px -40px rgba(0,0,0,0.6);
   }
 
   .titlebar{
@@ -121,7 +121,7 @@
   .tab-skills:hover, .tab-skills:focus-visible{ border-top-color: var(--blue); }
   .tab-contact:hover, .tab-contact:focus-visible{ border-top-color: var(--green); }
 
-  main{ padding: 8px 0 0; }
+  main{ padding: 8px 0 0; max-width: 780px; margin: 0 auto; }
 
   /* HERO */
   .hero{
